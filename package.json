@@ -9,7 +9,7 @@
     "start": "NODE_ENV=production node .",
     "dev": "npm run clean && NODE_ENV=development node .",
     "build": "NODE_ENV=production webpack -p --config ./webpack/config.babel.js",
-    "postinstall": "npm run build"
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [
     "webpack",
