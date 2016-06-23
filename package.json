@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_ENV=production node .",
     "dev": "npm run clean && NODE_ENV=development node .",
-    "build": "npm run clean && NODE_ENV=production webpack -p --config ./webpack/config.babel.js",
+    "build": "NODE_ENV=production webpack -p --config ./webpack/config.babel.js",
     "postinstall": "npm run build"
   },
   "keywords": [
