@@ -1,0 +1,19 @@
+@import '_colors';
+
+body {
+  color: $primary-text-color;
+  background: $background-color;
+}
+
+.navbar-default {
+	background: $test;
+}
+
+.bs-glyphicons-list li {
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	background: $menu-background;
+	text-align: center;
+  vertical-align: text-bottom;
+}

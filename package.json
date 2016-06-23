@@ -1,0 +1,52 @@
+{
+  "name": "express-webpack-server",
+  "version": "1.0.0",
+  "description": "Webpack server Dev and Prod",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf public || true",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=production node .",
+    "dev": "npm run clean && NODE_ENV=development node .",
+    "build": "npm run clean && NODE_ENV=production webpack -p --config ./webpack/config.babel.js",
+    "postinstall": "npm run build"
+  },
+  "keywords": [
+    "webpack",
+    "hot",
+    "reload",
+    "html",
+    "js",
+    "es6"
+  ],
+  "author": "dadViegas",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.9.0",
+    "browser-sync": "^2.13.0",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-webpack-plugin": "^2.21.0",
+    "html-webpack-template": "^5.0.0",
+    "node-sass": "^3.7.0",
+    "reload": "^0.8.1",
+    "resolve-url-loader": "^1.4.3",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.10.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "engines": {
+    "node": "6.2.1"
+  }
+}
