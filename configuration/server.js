@@ -1,6 +1,6 @@
 const devPort = 5001
 const browserSyncPort = 5000
-const prodPort = 8000
+const prodPort = process.env.PORT ? process.env.PORT : 8000
 const host = 'localhost'
 const proxy = `${host}:${devPort}`
 
