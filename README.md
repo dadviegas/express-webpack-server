@@ -1,4 +1,4 @@
-##express-webpack-server
+## Prototype express-webpack-server
 
 #### Steps to install: 
 
@@ -70,14 +70,13 @@ For the webpack compiler using the html pages we could pass chunk files this are
  
 ### Chunks:
 ```javascript
- {
-	// compiled sass with this file
-	// will be reused for all chunks, except if we want another style file
-	css: getJSResource('css.js'),
-
-	// js for html pages files if necessary
-  index: getJSResource('index.js'),
-  'pages/form': getJSResource('pages/form/index.js')
+{
+   // compiled sass with this file
+   // will be reused for all chunks, except if we want another style file
+   css: getJSResource('css.js'),
+   // js for html pages files if necessary
+   index: getJSResource('index.js'),
+   'pages/form': getJSResource('pages/form/index.js')
 }
 ```
 
