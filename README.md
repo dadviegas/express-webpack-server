@@ -24,6 +24,8 @@
 Heroku will be responsable for execute the build after the dependencies are installed.
 There's no need to run the command `npm run build` for the deploy, but we should test if everything is all right.
 
+Demo: [open here](http://htmlserver.herokuapp.com/)
+
 #### Structure folders
 * Assets contains all static files, like images, js, css, all files that will be static.
 * Source contains the files that will be the source for the webpack compiler
