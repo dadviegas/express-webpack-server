@@ -1,18 +1,23 @@
 express-webpack-server
 
 Steps to install: 
+
 * git clone
 * npm install
+
 ------
 
 #### Run Project in Development environment
+
 * npm run dev
+
 ------
 
 #### Run Project in Production environment locally
 
 * npm run build (this is to generate the files)
 * npm start
+
 ------
 
 #### Deploy 
