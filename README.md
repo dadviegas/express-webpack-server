@@ -37,4 +37,33 @@ There's no need to run the command `npm run build` for the deploy, but we should
 Contains the pages and js chunks for webpack. Each file html and js will be processed by this file.
 For the webpack compiler using the html pages we could pass chunk files this are the files webpack compiler generates.
 
+```javascript
+{
+  // title: the title of the page
+  // template: html template we want to use
+  // filename: the file that will be generated
+  // chunks: webpack chunks that the page uses
+  index: {
+    title: 'Boilerplate',
+    template: getResource('index.html'),
+    // getResource specifies the file from the source directory.
+    filename: './index.html',
+    chunks: ['index', 'css']
+  },
+  glyphicons: {
+    title: 'Boilerplate glyphicons',
+    template: getResource('glyphicons.html'),
+    filename: './glyphicons.html',
+    chunks: ['css']
+    // this case it will only use the chunk for the compiled sass
+  },
+  'pages/form': {
+    title: 'Boilerplate form',
+    template: getResource('pages/form/index.html'),
+    filename: './pages/form/index.html',
+    chunks: ['css', 'pages/form']
+    // this case will have the compiled css and the js necessary for the form page
+  }
+}
+```
  
