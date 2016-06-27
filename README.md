@@ -81,4 +81,4 @@ For the webpack compiler using the html pages we could pass chunk files this are
 }
 ```
 
-For development of another pages should be enough to add the html page in the source folder then add the new pages in the setup (pages and chunks part)
+For development of other pages should be enough to add the html page in the source folder then add the new pages in the setup (pages and chunks part)
