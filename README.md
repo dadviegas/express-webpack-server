@@ -37,6 +37,7 @@ There's no need to run the command `npm run build` for the deploy, but we should
 Contains the pages and js chunks for webpack. Each file html and js will be processed by this file.
 For the webpack compiler using the html pages we could pass chunk files this are the files webpack compiler generates.
 
+### Pages:
 ```javascript
 {
   // title: the title of the page
@@ -67,3 +68,17 @@ For the webpack compiler using the html pages we could pass chunk files this are
 }
 ```
  
+### Chunks:
+```javascript
+ {
+	// compiled sass with this file
+	// will be reused for all chunks, except if we want another style file
+	css: getJSResource('css.js'),
+
+	// js for html pages files if necessary
+  index: getJSResource('index.js'),
+  'pages/form': getJSResource('pages/form/index.js')
+}
+```
+
+For development of another pages should be enough to add the html page in the source folder then add the new pages in the setup (pages and chunks part)
